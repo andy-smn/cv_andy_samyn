@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    display: flex; /* Active Flexbox */
+    flex-direction: column; /* Organise les éléments verticalement */
+    min-height: 100vh; /* Hauteur minimale de la page = 100% de la fenêtre */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5C4033;
+    color: white;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav ul li {
+    position: relative;
+    margin-left: 1em;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #afafaf;
+}
+
+.navbar nav ul li .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #765343;
+    display: none;
+    list-style: none;
+    padding: 0.5rem 0;
+    min-width: 15em;
+    border-radius: 4px;
+    z-index: 1001;
+}
+
+.navbar nav ul li .dropdown li {
+    padding: 0.5rem 1rem;
+}
+
+.navbar nav ul li .dropdown li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: block;
+}
+
+.navbar nav ul li .dropdown li a:hover {
+    margin-left: 1 em;
+    color: #afafaf;
+    border-radius: 1em;
+    transition: color 0.5s;
+}
+
+.navbar nav ul li:hover .dropdown {
+    display: block;
+}
+
+/* Bannière */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 25em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(0.6);
+}
+
+.accueil-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color : black;
+}
+
+.accueil-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.accueil-text p {
+    padding-left: 5em;
+    padding-right: 5em;
+    font-size: 1.1rem;
+}
+
+main {
+    flex: 1; /* Permet au contenu principal de s'étirer pour remplir l'espace restant */
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #5C4033;
+    color: white;
+    margin-top: auto; /* Force le footer à se placer en bas si le contenu principal est trop court */
+
+}
