@@ -44,12 +44,17 @@ body {
     position: relative;
     margin-left: 1em;
     font-size: 1rem;
-
+    text-decoration: none;
     transition: color 0.3s;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
 }
 
 .navbar nav ul li a:hover {
     color: #afafaf;
+    transition: color 0.3s;
 }
 
 .navbar nav ul li a {
