@@ -17,27 +17,28 @@ body {
 
 .navbar {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #5C4033;
+    top: 1rem; /* Descend un peu pour l'effet flottant */
+    left: 50%; /* Point d'ancrage au milieu */
+    transform: translateX(-50%); /* Centre la nav sur l'écran */
+    background-color: rgba(55, 55, 55, 0.9); /* Couleur de fond semi-transparente */
     color: white;
     padding: 0.5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    width: auto; /* Retirer le 100% */
+    min-width: 300px; /* Largeur minimale */
+    border-radius: 8px; /* Bords arrondis */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Ombre pour effet flottant */
 }
 
-.navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
+/* Si vous voulez ajuster la liste, par exemple la centrer dans la nav */
 .navbar nav ul {
     list-style: none;
     display: flex;
     align-items: center;
+    margin: 0;
 }
 
 .navbar nav ul li {
@@ -46,6 +47,12 @@ body {
     font-size: 1rem;
     text-decoration: none;
     transition: color 0.3s;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 2rem;
 }
 
 .navbar nav ul li a {
@@ -63,15 +70,26 @@ body {
 
 .navbar nav ul li .dropdown {
     position: absolute;
+    display: block; 
     top: 100%;
     left: 0;
-    background-color: #765343;
-    display: none;
+    background-color: rgba(55, 55, 55, 0.9);
     list-style: none;
     padding: 0.5rem 0;
     min-width: 15em;
     border-radius: 4px;
-    z-index: 1001;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none; 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.navbar nav ul li:hover .dropdown {
+    display: block; 
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .navbar nav ul li .dropdown li {
@@ -86,14 +104,14 @@ body {
 }
 
 .navbar nav ul li .dropdown li a:hover {
-    margin-left: 1 em;
+    transform: translateX(10px);
     color: #afafaf;
     border-radius: 1em;
     transition: color 0.5s;
 }
 
 .navbar nav ul li:hover .dropdown {
-    display: block;
+    opacity: 100%;
 }
 
 /* Bannière */
@@ -141,13 +159,4 @@ main {
     flex: 1; /* Permet au contenu principal de s'étirer pour remplir l'espace restant */
     padding: 2rem;
     text-align: center;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #5C4033;
-    color: white;
-    margin-top: auto; /* Force le footer à se placer en bas si le contenu principal est trop court */
-
 }
