@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Oswald", serif;
     color: #333;
     line-height: 1.6;
     display: flex; /* Active Flexbox */
@@ -28,8 +28,8 @@ body {
     align-items: center;
     z-index: 1000;
     width: auto; /* Retirer le 100% */
-    min-width: 300px; /* Largeur minimale */
-    border-radius: 8px; /* Bords arrondis */
+    min-width: 20vh; /* Largeur minimale */
+    border-radius: 1vh; /* Bords arrondis */
     box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Ombre pour effet flottant */
 }
 
@@ -118,7 +118,7 @@ body {
 .banner {
     position: relative;
     width: 100%;
-    height: 25em;
+    height: 100vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -137,26 +137,70 @@ body {
     filter: brightness(0.8);
 }
 
-.accueil-text {
+.accueil {
     position: relative;
     z-index: 2;
     text-align: center;
-    color : black;
+    color:white;
 }
 
-.accueil-text h1 {
+.accueil h1 {
     font-size: 2.5rem;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
     margin-bottom: 0.5rem;
 }
 
-.accueil-text p {
+.accueil p {
     padding-left: 5em;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
     padding-right: 5em;
     font-size: 1.1rem;
+    text-align: justify;
 }
 
 main {
-    flex: 1; /* Permet au contenu principal de s'étirer pour remplir l'espace restant */
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
+}
+
+main>div>h1 {
+    padding-top: 1.5em;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+main>div {
+    padding: 2rem; /* Espace autour de la section projets */
+    text-align: center;
+    height: 100vh;
+}
+
+main>div>div {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+}
+
+main>div>div>div {
+    background-color: #f4f4f4;
+    border-radius: 8px; 
+    padding: 1.5rem;
+    width: 50em; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    text-align: left; 
+    margin-bottom: 2em;
+}
+
+main>div>div>div>h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    padding-bottom: 0.5em;
+
+}
+
+main>div>div>div>p {
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: justify;
+    padding-bottom: 1em;
 }

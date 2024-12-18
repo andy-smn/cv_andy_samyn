@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy Samyn</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="navbar">
@@ -15,9 +16,8 @@
                 <li>
                     <a href="#projets">Projets</a>
                     <ul class="dropdown">
-                        <li><a href="#web">Développement Web</a></li>
-                        <li><a href="#app">Applications Mobiles</a></li>
-                        <li><a href="#design">Design</a></li>
+                        <li><a href="#donjon-hexagone">Donjon Hexagone</a></li>
+                        <li><a href="#turboclassify">TurboClassify</a></li>
                     </ul>
                 </li>
                 <li><a href="#formations">Formations</a></li>
@@ -28,13 +28,38 @@
     </header>
 
     <header class="banner" id="home">
-        <img src="img/banner.png" alt="Bannière" class="banner-image">
+        <img src="img/forest-banner.jpeg" alt="Bannière" class="banner-image">
+        <div class="accueil">
+            <h1>Bienvenue sur mon CV numérique</h1>
+            <p>Passionné d’informatique et de développement, je suis étudiant en deuxième année de BUT Informatique dans le parcours A : réalisation d'applications : conception, développement, validation. Je recherche activement un stage en tant que développeur, possiblement Full Stack, pour une durée de 8 à 10 semaines a partir de début avril 2025. Ce serait pour moi une opportunité d’acquérir de l'expérience et des compétences à la fois professionnelles et informatiques et d’améliorer celles que je possède déjà. Sur ce site vous pourrez trouver diverse informations au sujet de mes compétences, et les projets que j’ai pu faire durant mes études.</p>
+        </div>
     </header>
 
     <main>
-        <div class="accueil-text">
-            <h1>Bienvenue sur mon CV numérique</h1>
-            <p>Passionné d’informatique et de développement, je suis étudiant en deuxième année de BUT Informatique dans le parcours A : réalisation d'applications : conception, développement, validation. Je recherche activement un stage en tant que développeur, possiblement Full Stack, pour une durée de 8 à 10 semaines a partir de début avril 2025. Ce serait pour moi une opportunité d’acquérir de l'expérience et des compétences à la fois professionnelles et informatiques et d’améliorer celles que je possède déjà. Sur ce site vous pourrez trouver diverse informations au sujet de mes compétences, et les projets que j’ai pu faire durant mes études.</p>
+        <div class="projets">
+            <h1>Projets</h1>
+            <div class="project-list">
+                <div class="project-card">
+                    <h2>Donjon Hexagone</h2>
+                    <p>Outils mobilisées : Java, Git, méthode agile</p>
+                    <p>Donjon Hexagone est un projet que j'ai eu l'occassion de réaliser au début de ma deuxième année de BUT Informatique. Dés la rentrée, pour nous remettre dans la programmation, l'équipe enseignante a organisé un petit projet, ou nous avons appris a utiliser la méthode agile par groupe de 5. Pour nous aider a la comprendre, des Scrum Master était présent et grâce a leurs aides ainsi que celles de nos professeurs, nous avons conçu un petit jeu en Java en 2 jours et demi. C'était un petit jeu simple qui marche dans le terminal et qui produit un affichage ASCII. Les enseignants nous on laissé la liberté de la création, Donjon Hexagone est donc un rogue-lite, ou le joueur progresse a travers les étages d'un donjon en récupérant de l'équipement et en combattant des monstres grâce a diverse compétences</p>
+                </div>
+                <div class="project-card">
+                    <h2>TurboClassify</h2>
+                    <p>Outils mobilisées : Java, JavaFX, maven, Git</p>
+                    <p>Lors de ma deuxième année, j'ai réaliser 3 projets informatique, le second, orienté développement, est une application de classification. Par groupe de 4, nous avons créer une application en deux étapes. La première, ou nous avons créer le modèle, permettant de récuperer et traiter les données d'un fichier CSV contenant des informations sur des iris et une vue, permettant d'afficher les données traitées dans un nuage de point et de configurer l'affichage en chossissant les catégories affiché et les axes du nuage. Pour la deuxième étape, nous avons permis d'ajouter un point sur le vue, l'utilisateur dois entrer les valeur a la main, seule la catégorie sélectionner lors du lancement n'est pas configurer car nous avons implémenter une méthode de classification permettant d'utiliser la distance de Manatthan ou Euclidienne normalisé ou non pour regarder les plus proches voisins et classifier en fonctions d'eux grâce a un algorithme k-NN. Et pour finir la SAE nous avons rajouter un début de généricité, ou il y a juste a modifier quelque lignes d'une classe pour utiliser un nouveau CSV</p>
+                </div>
+            </div>
+        </div>
+        <div class="formations">
+            <h1>Formations</h1>
+            <div class="formations-list">
+                <div class="formations-card">
+                    <h2>BUT Informatique</h2>
+                    <p>2023-20XX</p>
+                    <p></p>
+                </div>
+            </div>
         </div>
     </main>
 </body>
