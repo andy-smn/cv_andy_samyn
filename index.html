@@ -6,6 +6,7 @@
     <title>Andy Samyn</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header class="navbar">
@@ -22,13 +23,13 @@
                 </li>
                 <li><a href="#formations">Formations</a></li>
                 <li><a href="#competences">Compétences</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a id="contact-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <header class="banner" id="home">
-        <img src="img/forest-banner.jpeg" alt="Bannière" class="banner-image">
+        <img src="img/banner.jpeg" alt="Bannière" class="banner-image">
         <div class="accueil">
             <h1>Bienvenue sur mon CV numérique</h1>
             <p>Passionné d’informatique et de développement, je suis étudiant en deuxième année de BUT Informatique dans le parcours A : réalisation d'applications : conception, développement, validation. Je recherche activement un stage en tant que développeur, possiblement Full Stack, pour une durée de 8 à 10 semaines a partir de début avril 2025. Ce serait pour moi une opportunité d’acquérir de l'expérience et des compétences à la fois professionnelles et informatiques et d’améliorer celles que je possède déjà. Sur ce site vous pourrez trouver diverse informations au sujet de mes compétences, et les projets que j’ai pu faire durant mes études.</p>
@@ -36,31 +37,79 @@
     </header>
 
     <main>
-        <div class="projets">
+        <div class="projets" id="projets">
             <h1>Projets</h1>
-            <div class="project-list">
-                <div class="project-card">
+            <div class="projets-list">
+                <div class="projets-card">
                     <h2>Donjon Hexagone</h2>
                     <p>Outils mobilisées : Java, Git, méthode agile</p>
                     <p>Donjon Hexagone est un projet que j'ai eu l'occassion de réaliser au début de ma deuxième année de BUT Informatique. Dés la rentrée, pour nous remettre dans la programmation, l'équipe enseignante a organisé un petit projet, ou nous avons appris a utiliser la méthode agile par groupe de 5. Pour nous aider a la comprendre, des Scrum Master était présent et grâce a leurs aides ainsi que celles de nos professeurs, nous avons conçu un petit jeu en Java en 2 jours et demi. C'était un petit jeu simple qui marche dans le terminal et qui produit un affichage ASCII. Les enseignants nous on laissé la liberté de la création, Donjon Hexagone est donc un rogue-lite, ou le joueur progresse a travers les étages d'un donjon en récupérant de l'équipement et en combattant des monstres grâce a diverse compétences</p>
                 </div>
-                <div class="project-card">
+                <div class="projets-card">
                     <h2>TurboClassify</h2>
                     <p>Outils mobilisées : Java, JavaFX, maven, Git</p>
                     <p>Lors de ma deuxième année, j'ai réaliser 3 projets informatique, le second, orienté développement, est une application de classification. Par groupe de 4, nous avons créer une application en deux étapes. La première, ou nous avons créer le modèle, permettant de récuperer et traiter les données d'un fichier CSV contenant des informations sur des iris et une vue, permettant d'afficher les données traitées dans un nuage de point et de configurer l'affichage en chossissant les catégories affiché et les axes du nuage. Pour la deuxième étape, nous avons permis d'ajouter un point sur le vue, l'utilisateur dois entrer les valeur a la main, seule la catégorie sélectionner lors du lancement n'est pas configurer car nous avons implémenter une méthode de classification permettant d'utiliser la distance de Manatthan ou Euclidienne normalisé ou non pour regarder les plus proches voisins et classifier en fonctions d'eux grâce a un algorithme k-NN. Et pour finir la SAE nous avons rajouter un début de généricité, ou il y a juste a modifier quelque lignes d'une classe pour utiliser un nouveau CSV</p>
                 </div>
             </div>
         </div>
-        <div class="formations">
+        <div class="formations" id="formations">
             <h1>Formations</h1>
-            <div class="formations-list">
+            <div class="formations-list" >
                 <div class="formations-card">
                     <h2>BUT Informatique</h2>
-                    <p>2023-20XX</p>
-                    <p></p>
+                    <p>2023-2026</p>
+                    <p>Je suis actuellement en BUT Informatique en deuxième année a l'Université de Lille. Lors de ma formation j'ai pu apprendre de nombreuse choses grace a mes enseignants. J'ai développer mes compétence en programmation, en algorithmie ainsi que dans divers autre domaine comme la gestion de projet.</p>
+                </div>
+                <div class="formations-card">
+                    <h2>STI2D Option SIN</h2>
+                    <p>2021-2023</p>
+                    <p>Lors de mes années au lycée, j'ai passé mon Bac dans la formation STI2D SIN au lycée de l'Europe, a Dunkerque. J'ai acquis les base de l'informatique, apprenant l'algorithmie et le developpement dans le cadre de mon projet pour le Grand Oral</p>
                 </div>
             </div>
         </div>
+        <div class="competences" id="competences">
+            <h1>Compétences informatiques</h1>
+            <div class="competences-list">
+                <div class="competences-card">
+                    <img src="img/java-logo.png" alt="Logo java">
+                    <p>Java</p>
+                </div>
+                <div class="competences-card">
+                    <img src="img/git-logo.png" alt="Logo git">
+                    <p>Git</p>
+                </div>
+                <div class="competences-card">
+                    <img src="img/sql-logo.png" alt="Logo sql">
+                    <p>SQL</p>
+                </div>
+                <div class="competences-card">
+                    <img src="img/html-css-logo.png" alt="Logo html/css">
+                    <p>HTML/CSS</p>
+                </div>
+            </div>
+            <div class="competences-complementaire">
+                <h2>Compétences complementaire</h2>
+                <ul>
+                    <li>Travail d'équipe</li>
+                    <li>Gestion de projet</li>
+                    <li>Figma</li>
+                    <li>Scrum</li>
+                </ul>
+            </div>
+        </div>
+        <div id="modal-contact" class="modal">
+            <div class="modal-content">
+                <a class="close">&times;</a>
+                <h2>Contactez-moi !</h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/andy-samyn-4797632a8/">LinkedIn</a></li>
+                    <li><a href="mailto:andy.samyn2005@gmail.com">E-mail : andy.samyn2005@gmail.com</a></li>
+                    <li><a href="res/CV_Andy_Samyn.pdf">CV</a></li>
+                    <li><a>Téléphone : 06 21 10 28 32</a></li>
+                </ul>
+            </div>
+        </div>        
     </main>
+<script src="js/script.js"></script>
 </body>
 </html>

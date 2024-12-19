@@ -57,15 +57,12 @@ body {
 
 .navbar nav ul li a {
     text-decoration: none;
+    color: white;
 }
 
 .navbar nav ul li a:hover {
     color: #afafaf;
     transition: color 0.3s;
-}
-
-.navbar nav ul li a {
-    color: white;
 }
 
 .navbar nav ul li .dropdown {
@@ -142,6 +139,7 @@ body {
     z-index: 2;
     text-align: center;
     color:white;
+    padding : 10%;
 }
 
 .accueil h1 {
@@ -163,44 +161,197 @@ main {
     text-align: center;
 }
 
-main>div>h1 {
+.projets h1 {
     padding-top: 1.5em;
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-main>div {
+.projets {
     padding: 2rem; /* Espace autour de la section projets */
     text-align: center;
     height: 100vh;
-}
+}  
 
-main>div>div {
+.projets-list {
     display: flex;
     flex-direction: column; 
     align-items: center;    
+    gap: 2rem;
 }
 
-main>div>div>div {
+.projets-card {
     background-color: #f4f4f4;
     border-radius: 8px; 
     padding: 1.5rem;
     width: 50em; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
     text-align: left; 
-    margin-bottom: 2em;
+
 }
 
-main>div>div>div>h2 {
+.projets-card h2 {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
     padding-bottom: 0.5em;
 
 }
 
-main>div>div>div>p {
+.projets-card p {
     font-size: 1rem;
     line-height: 1.4;
     text-align: justify;
     padding-bottom: 1em;
+}
+
+.formations h1 {
+    padding-top: 1.5em;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.formations {
+    padding: 2rem; /* Espace autour de la section projets */
+    text-align: center;
+    height: 70vh;
+}
+
+.formations-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;    
+    justify-content: center;
+    gap: 2rem;
+}
+
+.formations-card {
+    background-color: #f4f4f4;
+    text-align: left;
+    border-radius: 8px; 
+    padding: 1.5rem;
+    max-width: 50em; 
+    min-height: 10em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.formations-card h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    padding-bottom: 0.5em;
+
+}
+
+.formations-card p {
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: justify;
+    padding-bottom: 1em;
+}
+
+.competences h1 {
+    padding-top: 1.5em;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.competences {
+    padding: 2rem; /* Espace autour de la section projets */
+    text-align: center;
+
+}
+
+.competences-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;    
+    justify-content: center;
+    gap: 2rem;
+}
+
+.competences-card {
+    background-color: #f4f4f4;
+    text-align: left;
+    border-radius: 8px; 
+    padding: 1.5rem;
+    min-width: 10em; 
+    min-height: 10em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.competences-card img {
+    height: 5em;
+    width: 5em;
+    display: block;
+    margin: 0 auto;
+}
+
+.competences-card p {
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 0.5em;    list-style: none;
+}
+
+.competences-complementaire {
+    background-color: #f4f4f4;
+    text-align: left;
+    border-radius: 8px; 
+    padding: 1.5rem;
+    min-width: 10em; 
+    min-height: 10em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 2rem auto 0 auto;
+    width: 46rem;
+    display: block;
+    list-style: none;
+}
+
+/* Style de la modale entière (fond semi-transparent) */
+.modal {
+    display: none; /* Cachée par défaut */
+    position: fixed; 
+    z-index: 2000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4); 
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenu de la modal */
+.modal-content {
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    position: relative;
+    text-align: left;
+}
+
+/* Bouton pour fermer la modal (croix) */
+.modal-content .close {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-content ul li a{
+    text-decoration: none;
+    color: #333;
+    
+}
+
+.modal-content ul li {
+    list-style: none;
+}
+
+.modal-content ul li:not(:last-child) a:hover {
+    color: #505050;
+    transition: color 0.3s;
 }
